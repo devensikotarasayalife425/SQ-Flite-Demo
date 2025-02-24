@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 
 import 'home.dart';
 
@@ -34,6 +35,41 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const Home()
+=======
+import 'package:flutter_sqflite/shared_preference/shared_preference.dart';
+import 'package:flutter_sqflite/to_do_list_services/Home.dart';
+
+import 'Login_Services/login_screen.dart';
+
+void main() {
+  runApp( MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  MyApp({super.key});
+
+
+  bool? isLogin = false;
+  String email = "";
+  checkLoginData()async{
+    SharedPreferenceClass pref = SharedPreferenceClass();
+    isLogin =await pref.getIsLogin() ?? false;
+    email = await pref.getEmail() ?? "";
+print("isLogin:$isLogin");
+print("email:$email");
+  }
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    checkLoginData();
+    return MaterialApp(
+      title: 'SqFlite Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home:isLogin! == true ?  HomeView(email: email,) : const LoginView(),
+>>>>>>> 2af1697 (Initial Commit)
     );
   }
 }

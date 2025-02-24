@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # flutter_pre_cache_image
+=======
+# flutter_sqflite
+>>>>>>> 2af1697 (Initial Commit)
 
 A new Flutter project.
 

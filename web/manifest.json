@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "flutter_pre_cache_image",
     "short_name": "flutter_pre_cache_image",
+=======
+    "name": "flutter_sqflite",
+    "short_name": "flutter_sqflite",
+>>>>>>> 2af1697 (Initial Commit)
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
