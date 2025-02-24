@@ -1,0 +1,1 @@
+// THis file is just for clarification of git command line and tools
