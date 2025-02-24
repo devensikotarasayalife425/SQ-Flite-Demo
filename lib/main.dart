@@ -61,6 +61,8 @@ print("email:$email");
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    print("isLogin:$isLogin");
+print("email:$email");
     checkLoginData();
     return MaterialApp(
       title: 'SqFlite Demo',
