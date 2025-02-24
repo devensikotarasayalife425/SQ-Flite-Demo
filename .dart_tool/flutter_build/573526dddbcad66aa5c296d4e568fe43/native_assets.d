@@ -1,0 +1,1 @@
+ D:\\Flutter\ Practice\\SQFlite_flutter\\flutter_sqflite\\.dart_tool\\flutter_build\\573526dddbcad66aa5c296d4e568fe43\\native_assets.yaml: 
